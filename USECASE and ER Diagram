@@ -1,0 +1,66 @@
++------------------+
+|      Admin       |
++------------------+
+| Admin_ID (PK)    |
+| Name             |
+| Email            |
+| Password         |
++------------------+
+
+          |
+          |
+          v
+
++------------------+
+|     Doctor       |
++------------------+
+| Doctor_ID (PK)   |
+| Name             |
+| Specialization   |
+| Phone            |
+| Email            |
++------------------+
+
+          |
+          | 1
+          |
+          | M
++----------------------+
+|    Appointment       |
++----------------------+
+| Appointment_ID (PK)  |
+| Patient_ID (FK)      |
+| Doctor_ID (FK)       |
+| Date                 |
+| Time                 |
+| Status               |
++----------------------+
+          |
+          |
+          |
+          v
+
++------------------+
+|     Patient      |
++------------------+
+| Patient_ID (PK)  |
+| Name             |
+| Age              |
+| Gender           |
+| Phone            |
+| Address          |
++------------------+
+          |
+          | 1
+          |
+          | M
++------------------+
+|  Prescription    |
++------------------+
+| Prescription_ID  |
+| Patient_ID (FK)  |
+| Doctor_ID (FK)   |
+| Medicine         |
+| Dosage           |
+| Remarks          |
++------------------+
