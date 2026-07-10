@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Management - MediTrack</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>MediTrack</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="patient.html">Patients</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+
+<div class="container">
+
+    <h2>Appointment Management</h2>
+
+    <form action="/appointments" method="POST">
+
+        <input type="text" name="patient_name" placeholder="Patient Name" required>
+
+        <input type="text" name="doctor_name" placeholder="Doctor Name" required>
+
+        <input type="date" name="appointment_date" required>
+
+        <button type="submit">Book Appointment</button>
+
+    </form>
+
+    <br>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Patient Name</th>
+            <th>Doctor Name</th>
+            <th>Appointment Date</th>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
